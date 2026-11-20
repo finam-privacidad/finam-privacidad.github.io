@@ -44,7 +44,8 @@ a{color:var(--primario)}
 <li><strong>Datos que apuntas en la app:</strong> proyectos, bloques, categorías y conceptos, movimientos (importe, fecha, nota, forma de pago), partidas fijas y vencimientos, límites de gasto y, si los adjuntas, fotos de tickets.</li>
 <li><strong>Miembros de los proyectos:</strong> quién pertenece a cada proyecto, su rol y las invitaciones.</li>
 <li><strong>Avisos:</strong> tus preferencias de notificaciones y el identificador técnico de tu iPhone para enviarte notificaciones.</li>
-<li><strong>Asistente IA:</strong> las preguntas que le haces y sus respuestas.</li>
+<li><strong>Asistente IA:</strong> en Premium, las preguntas que le haces y sus respuestas. En el plan gratuito el asistente funciona dentro de tu iPhone con la inteligencia artificial de Apple: lo que escribes no sale del dispositivo y la conversación no se guarda.</li>
+<li><strong>Voz:</strong> si dictas al asistente, el iPhone convierte tu voz en texto con el reconocimiento de voz de Apple, dentro del propio dispositivo cuando es posible. Nosotros no recibimos ni guardamos el audio, solo el texto que se envía.</li>
 </ul>
 <p>No pedimos datos bancarios ni de tarjetas, ni accedemos a tus cuentas del banco. No usamos herramientas de publicidad ni de seguimiento.</p>
 
@@ -62,9 +63,9 @@ a{color:var(--primario)}
 <li><strong>Los miembros de cada proyecto</strong> ven los datos de ese proyecto. Las conversaciones con el asistente solo las ve quien las tiene.</li>
 <li><strong>Proveedores técnicos</strong> que tratan los datos por cuenta nuestra, con contrato de encargado del tratamiento y solo para hacer funcionar la app:
 <ul>
-<li><strong>Supabase</strong> (base de datos, inicio de sesión y almacenamiento de tickets). Los servidores están en {{REGION}}.</li>
-<li><strong>Apple</strong> (envío de notificaciones e inicio de sesión con Apple).</li>
-<li><strong>Anthropic</strong> (asistente IA «Claude»): cuando usas el asistente, se le envía tu pregunta y un resumen de los datos del proyecto (totales por mes, categoría y concepto, límites, partidas fijas, próximos pagos y, si hace falta, algunos movimientos concretos). Anthropic no usa estos datos para entrenar sus modelos.</li>
+<li><strong>Supabase</strong> (base de datos, inicio de sesión y almacenamiento de tickets). Los servidores están en la Unión Europea (Irlanda).</li>
+<li><strong>Apple</strong> (envío de notificaciones, inicio de sesión con Apple y, si el iPhone no puede hacerlo por sí solo, el reconocimiento de voz del dictado).</li>
+<li><strong>Anthropic</strong> (asistente IA «Claude»): cuando usas el asistente, se le envía tu pregunta y un resumen de los datos del proyecto (totales por mes, bloque, categoría y concepto, límites, partidas fijas y su historial de pagos, próximos pagos, los nombres de los miembros y, si hace falta, algunos movimientos concretos). Anthropic no usa estos datos para entrenar sus modelos.</li>
 </ul>
 </li>
 </ul>
