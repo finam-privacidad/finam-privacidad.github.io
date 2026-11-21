@@ -23,7 +23,7 @@ a{color:var(--primario)}
 <body>
 <main>
 <h1>Política de privacidad de FINAM</h1>
-<p class="fecha">Última actualización: 20 de noviembre de 2026</p>
+<p class="fecha">Última actualización: 21 de noviembre de 2026</p>
 
 <div class="resumen">
 <p><strong>En pocas palabras</strong></p>
@@ -45,14 +45,17 @@ a{color:var(--primario)}
 <li><strong>Miembros de los proyectos:</strong> quién pertenece a cada proyecto, su rol y las invitaciones.</li>
 <li><strong>Avisos:</strong> tus preferencias de notificaciones y el identificador técnico de tu iPhone para enviarte notificaciones.</li>
 <li><strong>Asistente IA:</strong> en Premium, las preguntas que le haces y sus respuestas. En el plan gratuito el asistente funciona dentro de tu iPhone con la inteligencia artificial de Apple: lo que escribes no sale del dispositivo y la conversación no se guarda.</li>
-<li><strong>Voz:</strong> si dictas al asistente, el iPhone convierte tu voz en texto con el reconocimiento de voz de Apple, dentro del propio dispositivo cuando es posible. Nosotros no recibimos ni guardamos el audio, solo el texto que se envía.</li>
+<li><strong>Tickets, facturas y extractos del banco:</strong> cuando escaneas un ticket o una captura, el texto se lee siempre dentro de tu iPhone. Cuando importas un extracto (CSV, Excel, PDF, Norma 43 u OFX), el archivo se lee también en el iPhone y no se guarda en nuestros servidores: solo se guardan los movimientos que confirmas. Si adjuntas la foto de un ticket, se guarda junto a su movimiento.</li>
+<li><strong>Suscripción Premium:</strong> el pago lo cobra y lo gestiona Apple; nosotros nunca vemos tu tarjeta. Guardamos el número de la compra que nos da Apple, qué plan es (mensual o anual), hasta cuándo dura, si se renueva sola, para qué proyecto es y qué miembro la compró.</li>
+<li><strong>Voz:</strong> si dictas al asistente o a Siri, el iPhone convierte tu voz en texto con el reconocimiento de voz de Apple, dentro del propio dispositivo cuando es posible. Nosotros no recibimos ni guardamos el audio, solo el texto que se envía.</li>
 </ul>
 <p>No pedimos datos bancarios ni de tarjetas, ni accedemos a tus cuentas del banco. No usamos herramientas de publicidad ni de seguimiento.</p>
 
 <h2>3. Para qué los usamos y con qué base legal</h2>
 <ul>
 <li><strong>Prestarte el servicio</strong> (guardar tus datos, sincronizarlos entre tus dispositivos y con los miembros de tus proyectos, calcular informes, límites y avisos): es necesario para cumplir el contrato que aceptas al crear la cuenta (artículo 6.1.b del RGPD).</li>
-<li><strong>Asistente IA</strong> (responder a tus preguntas y, en Premium, preparar el resumen mensual): forma parte del servicio y solo se usa si lo utilizas. El administrador de cada proyecto puede desactivarlo.</li>
+<li><strong>Asistente IA</strong> (responder a tus preguntas y, en Premium, preparar el resumen mensual y clasificar tickets y extractos): forma parte del servicio y solo se usa si lo utilizas. El administrador de cada proyecto puede desactivar el asistente.</li>
+<li><strong>Gestionar la suscripción Premium</strong> (comprobar con Apple que la compra es auténtica y activar o retirar Premium en el proyecto): necesario para cumplir el contrato (artículo 6.1.b) y para cumplir las obligaciones contables y fiscales (artículo 6.1.c).</li>
 <li><strong>Seguridad y prevención de abusos:</strong> interés legítimo en proteger el servicio y a los usuarios (artículo 6.1.f).</li>
 <li><strong>Obligaciones legales</strong>, por ejemplo atender requerimientos de las autoridades (artículo 6.1.c).</li>
 </ul>
@@ -64,8 +67,8 @@ a{color:var(--primario)}
 <li><strong>Proveedores técnicos</strong> que tratan los datos por cuenta nuestra, con contrato de encargado del tratamiento y solo para hacer funcionar la app:
 <ul>
 <li><strong>Supabase</strong> (base de datos, inicio de sesión y almacenamiento de tickets). Los servidores están en la Unión Europea (Irlanda).</li>
-<li><strong>Apple</strong> (envío de notificaciones, inicio de sesión con Apple y, si el iPhone no puede hacerlo por sí solo, el reconocimiento de voz del dictado).</li>
-<li><strong>Anthropic</strong> (asistente IA «Claude»): cuando usas el asistente, se le envía tu pregunta y un resumen de los datos del proyecto (totales por mes, bloque, categoría y concepto, límites, partidas fijas y su historial de pagos, próximos pagos, los nombres de los miembros y, si hace falta, algunos movimientos concretos). Anthropic no usa estos datos para entrenar sus modelos.</li>
+<li><strong>Apple</strong> (envío de notificaciones, inicio de sesión con Apple, cobro de la suscripción Premium, Siri y, si el iPhone no puede hacerlo por sí solo, el reconocimiento de voz del dictado). Apple nos avisa de las renovaciones, cancelaciones y reembolsos de la suscripción para poner el plan correcto en el proyecto.</li>
+<li><strong>Anthropic</strong> (IA «Claude», solo en Premium): cuando usas el asistente, se le envía tu pregunta y un resumen de los datos del proyecto (totales por mes, bloque, categoría y concepto, límites, partidas fijas y su historial de pagos, próximos pagos, los nombres de los miembros y, si hace falta, algunos movimientos concretos). Cuando escaneas un ticket o importas un extracto, primero se intenta entender dentro del iPhone; solo si no se entiende bien se le envía el texto leído (y, si es una captura del banco o tiene muy poco texto, la imagen reducida) o las filas del extracto que no se han podido clasificar, junto con los nombres de tus conceptos, para proponerte el concepto de cada movimiento. Anthropic no usa estos datos para entrenar sus modelos. En el plan gratuito no se envía nada a Anthropic.</li>
 </ul>
 </li>
 </ul>
@@ -77,6 +80,7 @@ a{color:var(--primario)}
 <h2>6. Cuánto tiempo los guardamos</h2>
 <ul>
 <li>Mientras tengas la cuenta. Si la eliminas desde Ajustes, se borran tu perfil, tus datos y los proyectos de los que eres el único miembro. Los proyectos compartidos siguen para los demás miembros: lo que apuntaste en ellos se queda en el proyecto, pero sin tu nombre.</li>
+<li>Los datos de la suscripción se guardan mientras exista el proyecto y, después, solo el tiempo que exija la ley.</li>
 <li>Las copias de seguridad técnicas se eliminan solas en un plazo máximo de 30 días.</li>
 <li>Las conversaciones con el asistente puedes borrarlas cuando quieras. Anthropic puede conservar las peticiones durante un tiempo limitado para seguridad y después las elimina.</li>
 </ul>
