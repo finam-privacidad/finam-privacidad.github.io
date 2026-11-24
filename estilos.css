@@ -47,7 +47,7 @@ section{padding:64px 0}
 .titulo-seccion h2{font-size:clamp(1.7rem,3.5vw,2.3rem);line-height:1.2;margin:0 0 10px;letter-spacing:-.01em}
 .titulo-seccion p{color:var(--secundario);margin:0}
 
-.capturas{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.capturas{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 28px;max-width:900px;margin:0 auto}
 .capturas figure{margin:0}
 .capturas figcaption{text-align:center;margin-top:16px;font-weight:600}
 .capturas figcaption small{display:block;font-weight:400;color:var(--secundario);font-size:.9rem}
@@ -86,6 +86,17 @@ details p,details ol,details ul{margin:12px 0 0;color:var(--secundario)}
 .contacto h2{margin:0 0 8px;font-size:1.3rem}
 .contacto p{margin:0 0 14px;color:var(--secundario)}
 
+/* Consciencia */
+.antetitulo{text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;font-weight:600;color:var(--primario)!important;margin:0 0 10px!important}
+.consciente{background:linear-gradient(180deg,var(--fondo),var(--suave) 55%,var(--fondo))}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pilar{background:rgba(255,255,255,.7);border:1px solid var(--linea);border-radius:20px;padding:26px 24px}
+.pilar .num{display:block;font-size:.85rem;font-weight:600;color:var(--primario);letter-spacing:.08em;margin-bottom:12px}
+.pilar h3{margin:0 0 8px;font-size:1.15rem}
+.pilar p{margin:0;color:var(--secundario);font-size:.97rem}
+.cierre{text-align:center;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.3;font-weight:700;letter-spacing:-.01em;margin:0}
+.cierre span{color:var(--primario)}
+
 /* Pie */
 .pie{border-top:1px solid var(--linea);padding:28px 0 40px;color:var(--secundario);font-size:.92rem}
 .pie .contenedor{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
@@ -97,6 +108,7 @@ details p,details ol,details ul{margin:12px 0 0;color:var(--secundario)}
   .portada{grid-template-columns:1fr;gap:40px;padding-top:24px}
   .capturas{grid-template-columns:repeat(2,1fr)}
   .funciones{grid-template-columns:1fr 1fr}
+  .pilares{grid-template-columns:1fr 1fr}
   .banda{grid-template-columns:1fr;padding:32px 24px}
 }
 @media (max-width:600px){
@@ -104,6 +116,6 @@ details p,details ol,details ul{margin:12px 0 0;color:var(--secundario)}
   .menu{gap:14px;font-size:.9rem}
   .capturas{grid-template-columns:1fr 1fr;gap:16px}
   .movil{border-width:7px;border-radius:30px}
-  .funciones,.planes{grid-template-columns:1fr}
+  .funciones,.planes,.pilares{grid-template-columns:1fr}
   section{padding:48px 0}
 }
